@@ -1,5 +1,6 @@
 # Stacks
-![](pancakes.jpg)
+<!-- ![](pancakes.jpg) -->
+<img align="left" width="300" src="pancakes.jpg">
 <p>&nbsp;</p>
 My professor used this analogy when teaching me about stacks: Think of a stack as a pile of pancakes. Every time you make one, you put it on top of the pile, and when you are going to eat one, you take one also from the top of the pile. The same applies for sto Stacks. Stacks organize and use the data using the **LIFO** strategy: *Last in First out*.
 When we add something to a stack, we add it at the end of the collection. We call this function **push**, and when we remove something from a stack, we remove the last element of the collection. We call this function **pop**. Since stacks add and remove from the end of a collection, they are perfect to keep a history of where you were.
