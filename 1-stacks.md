@@ -1,13 +1,13 @@
 # Stacks
-<!-- ![](pancakes.jpg) -->
 <img align="left" width="300" src="pancakes.jpg">
 <p>&nbsp;</p>
 My professor used this analogy when teaching me about stacks: Think of a stack as a pile of pancakes. Every time you make one, you put it on top of the pile, and when you are going to eat one, you take one also from the top of the pile. The same applies for sto Stacks. Stacks organize and use the data using the **LIFO** strategy: *Last in First out*.
 When we add something to a stack, we add it at the end of the collection. We call this function **push**, and when we remove something from a stack, we remove the last element of the collection. We call this function **pop**. Since stacks add and remove from the end of a collection, they are perfect to keep a history of where you were.
 <p>&nbsp;</p>
 
-![](stacks1.jpg)
-
+<p align="center">
+<img  width="300" src="stacks1.jpg">
+</p>
 
  A real-world example of this is the undo functionality. When you undo to a previous stage, you go back one step. In other words you pop an element from the stack. 
 
@@ -68,7 +68,7 @@ Stacks are very efficient. All of its primary functions have an efficiency of O(
  Python syntax | Purpose | Performance| 
 | :-: | :-: | :-: |
 | `some_array.append()` | Adds an element to the back of the array |O(1)|
-| `some_array.pop` | Removes the last element in the array | O(1)|
+| `some_array.pop()` | Removes the last element in the array | O(1)|
 | `len(some_array)` | Gets the size of the array | O(1) |
 | `if len(some_array) == 0` | Check if the array is empty | O(1)
 
