@@ -5,11 +5,11 @@ My professor used this analogy when teaching me about stacks: Think of a stack a
 When we add something to a stack, we add it at the end of the collection. We call this function **push**, and when we remove something from a stack, we remove the last element of the collection. We call this function **pop**. Since stacks add and remove from the end of a collection, they are perfect to keep a history of where you were.
 <p>&nbsp;</p>
 
-<p align="center">
-<img  width="300" src="stacks1.jpg">
-</p>
-
  A real-world example of this is the undo functionality. When you undo to a previous stage, you go back one step. In other words you pop an element from the stack. 
+
+<p align="center">
+<img  width="500" src="stacks1.jpg">
+</p>
 
 ## Practice Problem
 Let us give it a try to a very simple problem.
