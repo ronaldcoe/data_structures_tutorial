@@ -4,3 +4,6 @@ In order to keep our collection together, every element (called a **node**) will
 ## Head and tail
 If we want traverse through our linked list, we will need to know where to begin and where to end. The first node in the linked list is refered as the **head** or the begining of the collection, and the last node is refered as the **tail**. 
 Most linked lists use a bi-directional linking between nodes. This meas that each node will mantain a pointer to both the next element and the previous.
+<p align="center">
+<img  width="500" src="linked_lists.jpg">
+</p>
