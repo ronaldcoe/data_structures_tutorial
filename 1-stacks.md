@@ -75,7 +75,7 @@ Use the following as test cases:
 6. Go home now = ```False```
 
 ### Solution
-Compare your program with the solution provided .
+Compare your program with the solution provided [Polindrome Solution](solutions/palindrome.py).
 
 
 ## Let's talk Big(O)
