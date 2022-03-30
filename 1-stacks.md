@@ -62,6 +62,22 @@ print(numbers_reversed)
 **Output:**
 `[45, 12, 1, 6, 3, 2]`
 
+## Your turn
+Try solving the following problem using stacks.
+### Problem definition:
+A palindrom is word, phrase, or number that reads the same forward and backward. For example, the word radar is the same written backward. Write a program that prompts for a word, phrase, or number and checks if is a palindrom.<br>
+Use the following as test cases:
+1. Cat = ```False```
+2. Rotator = ```True```
+3. No lemon, no melon = ```True```
+4. 12031 = ```False```
+5. 23532 = ```True``` 
+6. Go home now = ```False```
+
+### Solution
+Compare your program with the solution provided.
+
+
 ## Let's talk Big(O)
 Stacks are very efficient. All of its primary functions have an efficiency of O(1) or constant time.
 
