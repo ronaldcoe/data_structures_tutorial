@@ -109,6 +109,23 @@ def __reversed__(self):
 
     yield from self._traverse_backward(self.root)
 ```
+Use the following to test your tree
+```python
+tree = BST()
+tree.insert(9)
+tree.insert(5)
+tree.insert(1)
+tree.insert(8)
+tree.insert(10)
+
+for i in tree:
+    print(i)
+
+print(2 in tree) # False
+print(10 in tree) # True
+print(3 in tree) # False
+print(9 in tree) # True
+```
 ### Solution
 Compare your program with the solution provided [Trees Solution](solutions/trees.py).
 ## Let's talk Big(O)

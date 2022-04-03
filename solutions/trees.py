@@ -100,35 +100,18 @@ class BST:
         
         return max(h_l, h_r)
 
-print("\n=========== PROBLEM 1 TESTS ===========")
+print('===============Test Cases===============')
 tree = BST()
+tree.insert(9)
 tree.insert(5)
-tree.insert(3)
-tree.insert(7)
-# After implementing 'no duplicates' rule,
-# this next insert will have no effect on the tree.
-tree.insert(7)  
-tree.insert(4)
-tree.insert(10)
 tree.insert(1)
-tree.insert(6)
-for x in tree:
-    print(x)  # 1, 3, 4, 5, 6, 7, 10
+tree.insert(8)
+tree.insert(10)
 
-print("\n=========== PROBLEM 2 TESTS ===========")
-print(3 in tree) # True
+for i in tree:
+    print(i)
+
 print(2 in tree) # False
-print(7 in tree) # True
-print(6 in tree) # True
-print(9 in tree) # False
-
-print("\n=========== PROBLEM 3 TESTS ===========")
-for x in reversed(tree):
-    print(x)  # 10, 7, 6, 5, 4, 3, 1
-
-print("\n=========== PROBLEM 4 TESTS ===========")
-print(tree.get_height()) # 3
-tree.insert(6)
-print(tree.get_height()) # 3
-tree.insert(12)
-print(tree.get_height()) # 4
+print(10 in tree) # True
+print(3 in tree) # False
+print(9 in tree) # True
