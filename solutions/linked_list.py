@@ -5,8 +5,6 @@ ronaldcoello85@gmail.com
 Implementation of a Linked List
 '''
 
-from tkinter.tix import ListNoteBook
-
 
 class LinkedList:
 
