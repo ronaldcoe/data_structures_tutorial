@@ -45,7 +45,7 @@ The process of inserting a new element into the middle is a bit different:
 2. Set the **next** of the node before the current to the node after the current: ```current.prev.next = current.next```
 
 ## How to implement a Linked List in python
-Python doesn't have a way to directly implement a linked list. If we want to create a linked list in python, we neeed to create 2 classes. The LinkedList class and the Node Class.
+If we want to create a linked list in python, we neeed to create 2 classes. The LinkedList class and the Node Class.
 ```python
 class LinkedList:
 
@@ -110,6 +110,100 @@ Create the method ```insert_tail()```. Implement the method to handle the case i
             self.tail.next = new_node
             self.tail = new_node
 ```
+## How to implement a linked list in python using deque()
+Python has a way to implement a Linked list using the deque method from collections.
+```python
+# Import the deque method
+from collections import deque
+
+# Create the linked list with 3 elements
+linked_list = deque([6, 2, 3, 1, 20])
+
+# Insert something at the head
+linked_list.appendleft(0)
+
+# Insert something at the end
+linked_list.append(9)
+
+# Insert something at the middle .insert(i, value)
+linked_list.insert(1, 8)
+
+# Removing the head
+linked_list.popleft()
+
+# Removing the tail
+linked_list.pop()
+
+# Remove an element [i]
+del linkedlist[2]
+```
+## Your turn
+Try solving the following problem using linked lists.
+### Problem definition:
+In the practice problems, we implemented the `insert_head()` and `insert_tail()`. Now is your turn to implement the following methods in the Node class:<br>
+```python
+def remove_head()
+def remove_tail()
+def remove_node()
+def insert_next()
+```
+## Important:
+You will need to add these two methods for your program to work
+```python
+# Iterate foward through the Linked List
+def __iter__(self):
+    curr = self.head  # Start at the begining since this is a forward iteration.
+    while curr is not None:
+        yield curr.data  # Provide (yield) each item to the user
+        curr = curr.next # Go forward in the linked list
+
+# Return a string representation of the linked list.
+def __str__(self):
+    output = "linkedlist["
+    first = True
+    for value in self:
+        if first:
+            first = False
+        else:
+            output += ", "
+        output += str(value)
+    output += "]"
+    return output
+```
+Use the following as your test cases.
+```python
+linked_list = LinkedList()
+linked_list.insert_head(3)
+linked_list.insert_head(2)
+linked_list.insert_head(7)
+linked_list.insert_head(9)
+linked_list.insert_head(10)
+linked_list.insert_tail(20)
+print(linked_list) #linkedlist[10, 9, 7, 2, 3, 20]
+linked_list.remove_head()
+print(linked_list) # linkedlist[9, 7, 2, 3, 20]
+linked_list.remove_tail()
+linked_list.remove_node(7)
+print(linked_list) # linkedlist[9, 2, 3]
+linked_list.insert_next(2, 11)
+print(linked_list) # linkedlist[9, 2, 11, 3]
+```
+### Solution
+Compare your program with the solution provided [Linked List Solution](solutions/linked_list.py).
+
+## Let's talk Big(O)
+Stacks are very efficient. All of its primary functions have an efficiency of O(1) or constant time.
+
+ Python syntax | Purpose | Performance| 
+| :-: | :-: | :-: |
+| `linked_list.appendleft(value)` | Adds a value at the head |O(1)|
+| `linked_list.append()` | Adds a value at the tail | O(1)|
+| `linked_list.insert(i, value)` | Insert a value at the index | O(n) |
+| `linked_list.popleft()` | Removes the first element | O(1)
+| `linked_list.pop()` | Removes the last element | O(1)
+| `linked_list.remove()` | Removes an element at index | O(n)
+| `len(linked_list)` | Gets the size of the linked list | O(1)
+| `if len(linked_list) == 0` | Checks if a linked list is empty | O(1)
 
 
 

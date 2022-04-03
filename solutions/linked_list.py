@@ -5,6 +5,9 @@ ronaldcoello85@gmail.com
 Implementation of a Linked List
 '''
 
+from tkinter.tix import ListNoteBook
+
+
 class LinkedList:
 
     # Class to store the data of every element in the linked list
@@ -145,5 +148,19 @@ class LinkedList:
         return output
 
                 
-            
-
+'''===============Test Cases==============='''          
+linked_list = LinkedList()
+linked_list.insert_head(3)
+linked_list.insert_head(2)
+linked_list.insert_head(7)
+linked_list.insert_head(9)
+linked_list.insert_head(10)
+linked_list.insert_tail(20)
+print(linked_list) #linkedlist[10, 9, 7, 2, 3, 20]
+linked_list.remove_head()
+print(linked_list) # linkedlist[9, 7, 2, 3, 20]
+linked_list.remove_tail()
+linked_list.remove_node(7)
+print(linked_list) # linkedlist[9, 2, 3]
+linked_list.insert_next(2, 11)
+print(linked_list) # linkedlist[9, 2, 11, 3]
