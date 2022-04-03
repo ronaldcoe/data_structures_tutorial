@@ -65,7 +65,7 @@ print(numbers_reversed)
 ## Your turn
 Try solving the following problem using stacks.
 ### Problem definition:
-A palindrom is word, phrase, or number that reads the same forward and backward. For example, the word radar is the same written backward. Write a program that prompts for a word, phrase, or number and checks if is a palindrom.<br>
+A palindrome is word, phrase, or number that reads the same forward and backward. For example, the word radar is the same written backward. Write a program that prompts for a word, phrase, or number and checks if is a palindrom.<br>
 Use the following as test cases:
 1. Cat = ```False```
 2. Rotator = ```True```

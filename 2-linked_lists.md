@@ -10,7 +10,7 @@ Most linked lists use a bi-directional linking between nodes. This meas that eac
 ## How to insert an element into a linked list
 The process of inserting into a linked list will depend on where into the collection you want to add the new element.
 ### Inserting at the head.
-Insresting a new element at the head is an easy 4 step process.
+Inserting a new element at the head is an easy 4 step process.
 1. Create the new elemenet: ```new_node```
 2. Set the **next** of the ```new_node``` to the head: ```new_node.next = self.head```
 3. Set the ```new_node``` to be the **previous** of the head: ```self.head.prev = new_node```
@@ -25,11 +25,13 @@ Similiraly to inserting at the head, inserting at the tail is a 4 step process:
 
 ### Inserting into the middle
 The process of inserting a new element into the middle is a bit different:
+
 1. Create the new element: ```new_node```
 2. Set the **previous** of the ```new_node``` to the current node: ```new_node.prev = current```
 3. Set the **next** of the ```new_node``` to the **next** node after the current: ```new_node.next = current.next```
 4. Set the ```new_node``` to be the **previous** of the node after the current: ```current.next.prev = new_node```
 5. Set the ```new_node``` to be the **next** of the current node: ```current.next = new_node```
+
 
 ## How to remove an element from the linked list
 ### Removing the first element (head)
@@ -42,6 +44,72 @@ The process of inserting a new element into the middle is a bit different:
 1. Set the **previous** of the node after the current to the node before the current: ```current.next.prev = current.prev```
 2. Set the **next** of the node before the current to the node after the current: ```current.prev.next = current.next```
 
+## How to implement a Linked List in python
+Python doesn't have a way to directly implement a linked list. If we want to create a linked list in python, we neeed to create 2 classes. The LinkedList class and the Node Class.
+```python
+class LinkedList:
+
+    # Class to store the data of every element in the linked list
+    class Node:
+        def __init__(self, data):
+            self.next = None
+            self.prev = None
+            self.data = data
+
+    # Create an empty linked list 
+    def __init__(self):
+        self.head = None
+        self.tail = None
+```
+Inside the LinkedList class we'll add all the methods to manipulate our LinkedList. ```insert_head()```, ```insert_tail()```, ```remove_head()```, ```remove_tail()```, etc. You would follow the steps above to implement these methods.
+## Practice Problems
+Let's practice practice creating the ```insert_head()```, and ```insert_tail()``` methods for our linked list 
+### Problem definition:
+Create the method ```insert_head()```. Implement the method to handle the case if the list is empty or it's not.
+1. Create the ```insert_head()``` method:
+```python
+    def insert_head(self, value):
+```
+2. Create the new node:
+```python
+        new_node = LinkedList.Node(value)
+```
+3. If the list is empty set the head and the tail to the new_node:
+```python
+        if self.head is None:
+            self.head = new_node
+            self.tail = new_node
+```
+4. If the list is not empty, we'll change the head to be the new node:
+```python
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+```
+### Problem definition
+Create the method ```insert_tail()```. Implement the method to handle the case if the list is empty or it's not.
+1. Create the ```insert_tail()``` method:
+```python
+    def insert_tail(self, value):
+```
+2. Create the new node:
+```python
+        new_node = LinkedList.Node(value)
+```
+3. If the list is empty set the head and the tail to the new_node:
+```python
+        if self.tail is None:
+            self.head = new_node
+            self.tail = new_node
+```
+4. If the list is not empty, we'll change the head to be the new node:
+```python
+        else:
+            new_node.prev = self.tail
+            self.tail.next = new_node
+            self.tail = new_node
+```
 
 
 

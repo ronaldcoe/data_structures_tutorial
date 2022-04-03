@@ -23,7 +23,7 @@ def format_string(characters):
 def reverse_string(formated_string):
     reversed_string = []
     for i in range(len(formated_string)):
-        reversed_string.append(formated_string.pop())
+        reversed_string.append(formated_string[len(formated_string) - 1 - i])
     return reversed_string
 
 # Function to compare the formated string
@@ -38,8 +38,7 @@ def main():
     # Prompt the user for a word, phrase, or number
     characters = input('\nWhat is the word, prhase, or number?: ')
     formated_string = format_string(characters)
-    reversed_string = reverse_string(copy.deepcopy(formated_string))
-
+    reversed_string = reverse_string(formated_string)
     if is_palindrome(formated_string, reversed_string):
         print(characters, 'is a palindrome')
     else:
