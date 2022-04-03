@@ -32,4 +32,18 @@ If we were using a dynamic array, we would need to visit every element in the ar
 </p>
 
 ## Balanced binary search tree
-A balanced binary search tree is a tree that the difference of height between subtrees is not much different.
+A balanced binary search tree is a tree that the difference of height between subtrees is not much different. The height of the tree can be found by calculating the maximum number of nodes between the root and leaves.
+
+## Let's talk Big(O)
+Stacks are very efficient. All of its primary functions have an efficiency of O(1) or constant time.
+
+ Python syntax | Purpose | Performance| 
+| :-: | :-: | :-: |
+| `insert(value)` | Adds a value in the tree |O(log n)|
+| `remove(value)` | Removes a value from the tree | O(log n)|
+| `contains(value)` | Checks if a value exists in the tree | O(log n) |
+| `traverse_forward` | Visits all elements from smallest to largest | O(n)
+| `traverse_reverse` | Visits all elements from largest to smallest | O(n)
+| `height(root)` | Determine the size of a tree | O(n)
+| `size()` | Returns the size of the tree | O(1)
+| `empty()` | Check if the tree is empty | O(1)
