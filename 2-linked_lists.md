@@ -148,7 +148,7 @@ def remove_node()
 def insert_next()
 ```
 ## Important:
-You will need to add these two methods for your program to work
+You will need to add these two methods in the LinkedList class for your program to work
 ```python
 # Iterate foward through the Linked List
 def __iter__(self):
