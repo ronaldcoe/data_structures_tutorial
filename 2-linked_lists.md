@@ -63,7 +63,7 @@ class LinkedList:
 ```
 Inside the LinkedList class we'll add all the methods to manipulate our LinkedList. ```insert_head()```, ```insert_tail()```, ```remove_head()```, ```remove_tail()```, etc. You would follow the steps above to implement these methods.
 ## Practice Problems
-Let's practice practice creating the ```insert_head()```, and ```insert_tail()``` methods for our linked list 
+Let's practice creating the ```insert_head()```, and ```insert_tail()``` methods for our linked list 
 ### Problem definition:
 Create the method ```insert_head()```. Implement the method to handle the case if the list is empty or it's not.
 1. Create the ```insert_head()``` method:
