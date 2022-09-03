@@ -81,14 +81,14 @@ def _insert(self, data, node):
             self._insert(data, node.right)
 ```
 ### How to traverse a BST
-1. We'll create the `__iter__` function. This fuction is part of the python framework. It lets us get next element in a collection. In this case, it'll allow us to get the next value in our BST. It will let us use the `value in tree` syntax.
+1. We'll create the `__iter__` function. This function is part of the python framework. It lets us get next element in a collection. In this case, it'll allow us to get the next value in our BST. It will let us use the `value in tree` syntax.
 ```python
 def __iter__(self):
 
     # Will provide the next value.
     yield from self._traverse_forward()
 ```
-2. Now, lets create the `_traverse_forward()` function. This fucntion will visit all the elements on the left and all the elements on the right.
+2. Now, lets create the `_traverse_forward()` function. This function will visit all the elements on the left and all the elements on the right.
 ```python
 def _traverse_forward(self, node):
     if node is not None:
