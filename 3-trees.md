@@ -1,6 +1,6 @@
 # Trees
 
-A tree is a data structur similar to a linked list in that nodes are connected by pointers; however, unlike linked lists, trees are nonlinear, meaning that a tree can connect to multiple nodes. 
+A tree is a data structure similar to a linked list in that nodes are connected by pointers; however, unlike linked lists, trees are nonlinear, meaning that a tree can connect to multiple nodes. 
 </br>
 In this tutorial, we will talk about three different types of trees: binary trees, binary search trees, and balanced binary search trees.
 <p align="center">
