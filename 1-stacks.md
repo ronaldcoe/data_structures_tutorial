@@ -55,7 +55,7 @@ You could also do this with fewer lines of code:
 ```python
 numbers =  [2, 3, 6, 1, 12, 45]  
 
-numbers_reversed = [number.pop() for i in range(len(numbers)]
+numbers_reversed = [numbers.pop() for i in range(len(numbers)]
 
 print(numbers_reversed)
 ```
