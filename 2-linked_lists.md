@@ -113,6 +113,7 @@ Create the method ```insert_tail()```. Implement the method to handle the case i
 ## How to implement a linked list in python using deque()
 Python has a way to implement a Linked list using the deque method from collections.
 ```python
+
         # Import the deque method
         from collections import deque
 
