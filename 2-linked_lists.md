@@ -113,29 +113,29 @@ Create the method ```insert_tail()```. Implement the method to handle the case i
 ## How to implement a linked list in python using deque()
 Python has a way to implement a Linked list using the deque method from collections.
 ```python
-# Import the deque method
-from collections import deque
+        # Import the deque method
+        from collections import deque
 
-# Create the linked list with 3 elements
-linked_list = deque([6, 2, 3, 1, 20])
+        # Create the linked list with 3 elements
+        linked_list = deque([6, 2, 3, 1, 20])
 
-# Insert something at the head
-linked_list.appendleft(0)
+        # Insert something at the head
+        linked_list.appendleft(0)
 
-# Insert something at the end
-linked_list.append(9)
+        # Insert something at the end
+        linked_list.append(9)
 
-# Insert something at the middle .insert(i, value)
-linked_list.insert(1, 8)
+        # Insert something at the middle .insert(i, value)
+        linked_list.insert(1, 8)
 
-# Removing the head
-linked_list.popleft()
+        # Removing the head
+        linked_list.popleft()
 
-# Removing the tail
-linked_list.pop()
+        # Removing the tail
+        linked_list.pop()
 
-# Remove an element [i]
-del linkedlist[2]
+        # Remove an element [i]
+        del linkedlist[2]
 ```
 ## Your turn
 Try solving the following problem using linked lists.
