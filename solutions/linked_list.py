@@ -90,7 +90,7 @@ class LinkedList:
 
                 # If tail is the value we want to remove, call remove_tail()
                 elif curr == self.tail:
-                    self.remove_tail
+                    self.remove_tail()
                 
                 # If the value we want to remove is anywhere else
                 else:
